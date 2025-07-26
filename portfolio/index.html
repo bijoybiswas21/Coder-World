@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bijoy Biswas - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header/Navbar -->
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a href="#home" class="logo-link" id="logo-link">
+              <div class="logo-icon">
+                <span class="logo-initial">B</span>
+                <div class="logo-dot"></div>
+                <div class="logo-sparkle">
+                  <span class="sparkle sparkle-1">✦</span>
+                  <span class="sparkle sparkle-2">✧</span>
+                  <span class="sparkle sparkle-3">✦</span>
+                </div>
+              </div>
+              <div class="logo-text">
+                <span class="logo-name">Bijoy Biswas</span>
+                <span class="logo-tagline">Web Developer</span>
+              </div>
+            </a>
+            <div class="logo-dropdown" id="logo-dropdown">
+              <div class="dropdown-item" data-action="home">
+                <i class="fas fa-home"></i>
+                <span>Go to Home</span>
+              </div>
+              <div class="dropdown-item" data-action="portfolio">
+                <i class="fas fa-briefcase"></i>
+                <span>View Portfolio</span>
+              </div>
+              <div class="dropdown-item" data-action="download">
+                <i class="fas fa-download"></i>
+                <span>Download CV</span>
+              </div>
+              <div class="dropdown-item" data-action="contact">
+                <i class="fas fa-envelope"></i>
+                <span>Contact Me</span>
+              </div>
+            </div>
+          </div>
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">
+                <i class="fas fa-bolt"></i>
+                <span>Skills</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">
+                <i class="fas fa-briefcase"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link">
+                <i class="fas fa-file-alt"></i>
+                <span>Resume</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+          <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="section-logo home-logo">
+        <div class="logo-container">
+          <i class="fas fa-home"></i>
+          <span class="logo-text">Home</span>
+        </div>
+      </div>
+      <div class="hero-background">
+        <div class="hero-particles"></div>
+        <div class="hero-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content" data-aos="fade-up">
+          <div class="hero-image-container">
+            <div class="hero-image">
+              <img
+                src="assets/bijoy1.jpg"
+                alt="Bijoy Biswas"
+                class="profile-img"
+              />
+              <div class="image-border"></div>
+              <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Available for work</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-text">
+            <div class="hero-greeting">
+              <span class="wave">👋</span>
+              <span>Hello, I'm</span>
+            </div>
+            <h1 class="hero-title">
+              <span class="name-highlight">Bijoy Biswas</span>
+            </h1>
+            <div class="hero-roles">
+              <span class="role-prefix">I'm a</span>
+              <div class="typing-container">
+                <span id="typing-text" class="typing-text"></span>
+                <span class="cursor">|</span>
+              </div>
+            </div>
+            <p class="hero-description">
+              Passionate BCA student specializing in
+              <strong>Web Development</strong>,
+              <strong>Data Structures & Algorithms</strong>, and
+              <strong>Artificial Intelligence</strong>. I create innovative
+              digital solutions that bridge technology and user experience.
+            </p>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-count="15">0</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="3">0</span>
+                <span class="stat-label">Years Learning</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="8">0</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Work</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a
+                href="assets/Bijoy_Biswas_Resume.pdf"
+                class="btn btn-secondary"
+                download
+              >
+                <i class="fas fa-download"></i>
+                <span>Download CV</span>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <span>Let's Talk</span>
+                <i class="fas fa-comments"></i>
+              </a>
+            </div>
+
+            <div class="hero-social">
+              <span class="social-label">Follow me:</span>
+              <div class="social-links">
+                <a href="#" class="social-link" data-tooltip="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" data-tooltip="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" data-tooltip="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" data-tooltip="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-text">Scroll Down</div>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="section-logo about-logo">
+        <div class="logo-container">
+          <i class="fas fa-user-circle"></i>
+          <span class="logo-text">About</span>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">About Me</h2>
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <p>
+              I'm a dedicated BCA student with a passion for web development and
+              emerging technologies. My journey in computer science has led me
+              to specialize in creating responsive web applications, mastering
+              data structures & algorithms, and exploring the exciting world of
+              artificial intelligence.
+            </p>
+            <p>
+              When I'm not coding, you'll find me learning new technologies,
+              contributing to open-source projects, or working on innovative
+              solutions that bridge the gap between technology and user
+              experience.
+            </p>
+          </div>
+          <div class="skills-container" data-aos="fade-left">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>DSA</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-brain"></i>
+                <span>AI/ML</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="section-logo skills-logo">
+        <div class="logo-container">
+          <i class="fas fa-bolt"></i>
+          <span class="logo-text">Skills</span>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+        <div class="skills-content">
+          <!-- Frontend Skills -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <div class="category-header">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="95"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">React</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-header">
+              <i class="fas fa-server"></i>
+              <h3>Backend Development</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="88"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">MongoDB</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="70"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-percentage">78%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="78"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Technologies -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+            <div class="category-header">
+              <i class="fas fa-tools"></i>
+              <h3>Tools & Technologies</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="92"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Photoshop</span>
+                  <span class="skill-percentage">68%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="68"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI/ML Skills -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+            <div class="category-header">
+              <i class="fas fa-brain"></i>
+              <h3>AI & Machine Learning</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">TensorFlow</span>
+                  <span class="skill-percentage">72%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="72"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Scikit-learn</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Data Analysis</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Algorithms & DSA</span>
+                  <span class="skill-percentage">83%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-width="83"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Summary -->
+        <div class="skills-summary" data-aos="fade-up" data-aos-delay="500">
+          <div class="summary-item">
+            <div class="summary-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="summary-content">
+              <h4>Programming Languages</h4>
+              <p>JavaScript, Python, HTML5, CSS3, SQL</p>
+            </div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <div class="summary-content">
+              <h4>Frameworks & Libraries</h4>
+              <p>React, Node.js, Express, TensorFlow, Flask</p>
+            </div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="summary-content">
+              <h4>Databases & Tools</h4>
+              <p>MongoDB, MySQL, Git, VS Code, Figma</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="section-logo projects-logo">
+        <div class="logo-container">
+          <i class="fas fa-briefcase"></i>
+          <span class="logo-text">Projects</span>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img src="assets/project1.jpg" alt="E-commerce Website" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-commerce Platform</h3>
+              <p>
+                A full-stack e-commerce solution with user authentication,
+                payment integration, and admin dashboard.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <img src="assets/project2.jpg" alt="AI Chatbot" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>AI-Powered Chatbot</h3>
+              <p>
+                An intelligent chatbot using natural language processing to
+                provide customer support and assistance.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Flask</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-image">
+              <img src="assets/project3.jpg" alt="Task Management App" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Task Management System</h3>
+              <p>
+                A collaborative task management application with real-time
+                updates and team collaboration features.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">Express</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+      <div class="section-logo resume-logo">
+        <div class="logo-container">
+          <i class="fas fa-file-alt"></i>
+          <span class="logo-text">Resume</span>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Resume</h2>
+        <div class="resume-content">
+          <div class="resume-download" data-aos="fade-up">
+            <p>
+              Download my complete resume to learn more about my experience and
+              qualifications.
+            </p>
+            <a
+              href="assets/Bijoy_Biswas_Resume.pdf"
+              class="btn btn-primary"
+              download
+            >
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+          <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>BCA Student</h3>
+                <span class="timeline-date">2024 - Present</span>
+                <p>
+                  Pursuing Bachelor of Computer Applications with focus on web
+                  development and AI technologies.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Class 12th</h3>
+                <span class="timeline-date">2021 - 2023</span>
+                <p>
+                  Developed responsive web applications and gained hands-on
+                  experience with modern frameworks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="section-logo contact-logo">
+        <div class="logo-container">
+          <i class="fas fa-envelope"></i>
+          <span class="logo-text">Contact</span>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Let's Connect</h3>
+            <p>
+              I'm always open to discussing new opportunities, collaborations,
+              or just having a chat about technology.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>bijoy.biswas@email.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 [phone_number]</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>[address], India</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" data-aos="fade-left" id="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <span class="error-message" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+              <span class="error-message" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
