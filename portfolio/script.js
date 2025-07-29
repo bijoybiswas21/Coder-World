@@ -228,7 +228,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Header Background on Scroll
 window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
+    const scrolled = window.scrollY;
     
     // Header background
     if (scrolled > 100) {
@@ -266,7 +266,7 @@ function updateActiveNavLink() {
     const navLinks = document.querySelectorAll('.nav-link');
     
     let current = '';
-    const scrollPosition = window.pageYOffset + header.offsetHeight + 100;
+    const scrollPosition = window.scrollY + header.offsetHeight + 100;
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
@@ -489,7 +489,7 @@ window.addEventListener('load', () => {
 
 // Parallax Effect for Hero Section
 window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
+    const scrolled = window.scrollY;
     const hero = document.querySelector('.hero');
     const rate = scrolled * -0.5;
     
@@ -528,10 +528,19 @@ const skillsObserver = new IntersectionObserver((entries) => {
                 bar.style.width = width + '%';
                 bar.classList.add('animate');
             });
+            
+            // Animate technology stack level bars
+            const levelBars = entry.target.querySelectorAll('.level-fill');
+            levelBars.forEach(bar => {
+                const level = bar.getAttribute('data-level');
+                setTimeout(() => {
+                    bar.style.width = level + '%';
+                }, 500);
+            });
         }
     });
 }, {
-    threshold: 0.5,
+    threshold: 0.3,
     rootMargin: '0px 0px -100px 0px'
 });
 
@@ -625,7 +634,7 @@ function throttle(func, limit) {
 
 // Apply throttling to scroll events
 window.addEventListener('scroll', throttle(() => {
-    const scrolled = window.pageYOffset;
+    const scrolled = window.scrollY;
     
     // Header background
     if (scrolled > 100) {
