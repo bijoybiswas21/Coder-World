@@ -19,7 +19,7 @@
           <div class="nav-logo">
             <a href="#home" class="logo-link" id="logo-link">
               <div class="logo-icon">
-                <span class="logo-initial">B</span>
+                <span class="logo-initial">{B}</span>
                 <div class="logo-dot"></div>
                 <div class="logo-sparkle">
                   <span class="sparkle sparkle-1">✦</span>
@@ -45,10 +45,7 @@
                 <i class="fas fa-download"></i>
                 <span>Download CV</span>
               </div>
-              <div class="dropdown-item" data-action="contact">
-                <i class="fas fa-envelope"></i>
-                <span>Contact Me</span>
-              </div>
+
             </div>
           </div>
           <ul class="nav-menu" id="nav-menu">
@@ -70,6 +67,13 @@
                 <span>Skills</span>
               </a>
             </li>
+
+            <li class="nav-item">
+              <a href="#certifications" class="nav-link">
+                <i class="fas fa-certificate"></i>
+                <span>Certifications</span>
+              </a>
+            </li>
             <li class="nav-item">
               <a href="#projects" class="nav-link">
                 <i class="fas fa-briefcase"></i>
@@ -88,6 +92,8 @@
                 <span>Contact</span>
               </a>
             </li>
+
+
           </ul>
           <div class="nav-toggle" id="nav-toggle">
             <span class="bar"></span>
@@ -110,11 +116,38 @@
         </div>
       </div>
       <div class="hero-background">
+        <!-- Video Background -->
+        <div class="hero-video-container">
+          <video class="hero-video" autoplay muted loop playsinline preload="auto" id="hero-video">
+            <source src="../14159465_3840_2160_25fps.mp4" type="video/mp4">
+            <source src="14159465_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-fallback">
+            <div class="fallback-message">
+              <i class="fas fa-play-circle"></i>
+              <p>Click to enable video background</p>
+            </div>
+          </div>
+          <div class="video-overlay"></div>
+        </div>
+        
+        <!-- Animated Particles and Shapes -->
         <div class="hero-particles"></div>
         <div class="hero-shapes">
           <div class="shape shape-1"></div>
           <div class="shape shape-2"></div>
           <div class="shape shape-3"></div>
+        </div>
+        
+        <!-- Video Controls -->
+        <div class="video-controls">
+          <button class="video-toggle" id="video-toggle" title="Play/Pause Video">
+            <i class="fas fa-pause"></i>
+          </button>
+          <button class="video-mute" id="video-mute" title="Mute/Unmute">
+            <i class="fas fa-volume-mute"></i>
+          </button>
         </div>
       </div>
 
@@ -171,9 +204,9 @@
                 <i class="fas fa-download"></i>
                 <span>Download CV</span>
               </a>
-              <a href="#contact" class="btn btn-outline">
-                <span>Let's Talk</span>
-                <i class="fas fa-comments"></i>
+              <a href="#projects" class="btn btn-outline">
+                <span>View Projects</span>
+                <i class="fas fa-briefcase"></i>
               </a>
             </div>
 
@@ -224,7 +257,7 @@
               <div class="about-image-border"></div>
               <div class="about-status-indicator">
                 <span class="status-dot"></span>
-                <span class="status-text">Available for work</span>
+                <span class="status-text"></span>
               </div>
             </div>
           </div>
@@ -244,39 +277,7 @@
             </p>
           </div>
           <div class="skills-container" data-aos="fade-left">
-            <h3>Technical Skills</h3>
-            <div class="skills-grid">
-              <div class="skill-item">
-                <i class="fab fa-html5"></i>
-                <span>HTML5</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS3</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-js-square"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-react"></i>
-                <span>React</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-python"></i>
-                <span>Python</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>DSA</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-brain"></i>
-                <span>AI/ML</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-git-alt"></i>
-                <span>Git</span>
+           
               </div>
             </div>
           </div>
@@ -310,10 +311,10 @@
                     <i class="fab fa-js-square skill-icon"></i>
                     JavaScript
                   </span>
-                  <span class="skill-percentage">90%</span>
+                  <span class="skill-percentage">70%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="90"></div>
+                  <div class="skill-fill" data-width="70"></div>
                 </div>
               </div>
               <div class="skill-bar">
@@ -322,38 +323,40 @@
                     <i class="fab fa-python skill-icon"></i>
                     Python
                   </span>
-                  <span class="skill-percentage">85%</span>
+                  <span class="skill-percentage">55%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="85"></div>
+                  <div class="skill-fill" data-width="55"></div>
                 </div>
               </div>
               <div class="skill-bar">
                 <div class="skill-info">
                   <span class="skill-name">
                     <i class="fab fa-java skill-icon"></i>
-                    Java
+                    
                   </span>
-                  <span class="skill-percentage">80%</span>
+                  <span class="skill-percentage">20%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="80"></div>
+                  <div class="skill-fill" data-width="20"></div>
                 </div>
               </div>
+              
               <div class="skill-bar">
                 <div class="skill-info">
                   <span class="skill-name">
                     <i class="fas fa-database skill-icon"></i>
                     SQL
                   </span>
-                  <span class="skill-percentage">75%</span>
+                  <span class="skill-percentage">25%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="75"></div>
+                  <div class="skill-fill" data-width="25"></div>
                 </div>
               </div>
             </div>
           </div>
+          
 
           <!-- Web Technologies -->
           <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
@@ -380,10 +383,10 @@
                     <i class="fab fa-react skill-icon"></i>
                     React.js
                   </span>
-                  <span class="skill-percentage">85%</span>
+                  <span class="skill-percentage">50%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="85"></div>
+                  <div class="skill-fill" data-width="50"></div>
                 </div>
               </div>
               <div class="skill-bar">
@@ -392,10 +395,10 @@
                     <i class="fab fa-node-js skill-icon"></i>
                     Node.js
                   </span>
-                  <span class="skill-percentage">80%</span>
+                  <span class="skill-percentage">20%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="80"></div>
+                  <div class="skill-fill" data-width="20"></div>
                 </div>
               </div>
               <div class="skill-bar">
@@ -404,10 +407,10 @@
                     <i class="fas fa-server skill-icon"></i>
                     REST APIs
                   </span>
-                  <span class="skill-percentage">85%</span>
+                  <span class="skill-percentage">30%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="85"></div>
+                  <div class="skill-fill" data-width="30"></div>
                 </div>
               </div>
             </div>
@@ -426,10 +429,10 @@
                     <i class="fab fa-linux skill-icon"></i>
                     Linux Administration
                   </span>
-                  <span class="skill-percentage">85%</span>
+                  <span class="skill-percentage">50%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="85"></div>
+                  <div class="skill-fill" data-width="50"></div>
                 </div>
               </div>
               <div class="skill-bar">
@@ -438,10 +441,10 @@
                     <i class="fas fa-network-wired skill-icon"></i>
                     Computer Networks
                   </span>
-                  <span class="skill-percentage">80%</span>
+                  <span class="skill-percentage">60%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="80"></div>
+                  <div class="skill-fill" data-width="60"></div>
                 </div>
               </div>
               <div class="skill-bar">
@@ -462,10 +465,10 @@
                     <i class="fas fa-brain skill-icon"></i>
                     Data Structures & Algorithms
                   </span>
-                  <span class="skill-percentage">75%</span>
+                  <span class="skill-percentage">55%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="75"></div>
+                  <div class="skill-fill" data-width="55"></div>
                 </div>
               </div>
             </div>
@@ -484,10 +487,10 @@
                     <i class="fas fa-brain skill-icon"></i>
                     Machine Learning
                   </span>
-                  <span class="skill-percentage">70%</span>
+                  <span class="skill-percentage">10%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="70"></div>
+                  <div class="skill-fill" data-width="10"></div>
                 </div>
               </div>
               <div class="skill-bar">
@@ -496,10 +499,10 @@
                     <i class="fas fa-chart-line skill-icon"></i>
                     Data Analysis
                   </span>
-                  <span class="skill-percentage">75%</span>
+                  <span class="skill-percentage">30%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="75"></div>
+                  <div class="skill-fill" data-width="30"></div>
                 </div>
               </div>
               <div class="skill-bar">
@@ -508,10 +511,10 @@
                     <i class="fab fa-python skill-icon"></i>
                     TensorFlow/PyTorch
                   </span>
-                  <span class="skill-percentage">65%</span>
+                  <span class="skill-percentage">10%</span>
                 </div>
                 <div class="skill-progress">
-                  <div class="skill-fill" data-width="65"></div>
+                  <div class="skill-fill" data-width="10"></div>
                 </div>
               </div>
             </div>
@@ -548,6 +551,7 @@
                 <span class="skill-tag react">React</span>
                 <span class="skill-tag bootstrap">Bootstrap</span>
                 <span class="skill-tag sass">Sass</span>
+                <span class="skill-tag Tailwind">Tailwind</span>
               </div>
               <div class="skill-level">
                 <span class="level-text">Proficiency: Advanced</span>
@@ -746,6 +750,339 @@
       </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+      <div class="section-logo certifications-logo">
+        <div class="logo-container">
+          <i class="fas fa-certificate"></i>
+          <span class="logo-text">Certifications</span>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My Certifications & Achievements</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Professional certifications and courses that showcase my expertise and commitment to continuous learning
+        </p>
+
+        <!-- Certification Categories -->
+        <div class="cert-categories" data-aos="fade-up" data-aos-delay="200">
+          <button class="cert-filter active" data-filter="all">All Certifications</button>
+          <button class="cert-filter" data-filter="web">Web Development</button>
+          <button class="cert-filter" data-filter="ai">AI & Machine Learning</button>
+          <button class="cert-filter" data-filter="cloud">Cloud Computing</button>
+          <button class="cert-filter" data-filter="programming">Programming</button>
+        </div>
+
+        <!-- Certifications Grid -->
+        <div class="certifications-grid">
+          <!-- Web Development Certifications -->
+          <div class="cert-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-video-container">
+              <video class="cert-video" poster="assets/cert-web-poster.jpg" controls>
+                <source src="assets/web-development-cert.mp4" type="video/mp4">
+                <p>Your browser doesn't support HTML5 video. <a href="assets/web-development-cert.mp4">Download the video</a> instead.</p>
+              </video>
+              <div class="cert-overlay">
+                <div class="cert-badge">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-header">
+                <h3>Full Stack Web Development</h3>
+                <div class="cert-issuer">
+                  <img src="assets/freecodecamp-logo.png" alt="FreeCodeCamp" class="issuer-logo">
+                  <span>FreeCodeCamp</span>
+                </div>
+              </div>
+              <p class="cert-description">
+                Comprehensive certification covering HTML5, CSS3, JavaScript, React, Node.js, and database management.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+              </div>
+              <div class="cert-footer">
+                <span class="cert-date">Completed: December 2023</span>
+                <div class="cert-actions">
+                  <a href="#" class="cert-link" title="View Certificate">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="cert-link" title="Verify Certificate">
+                    <i class="fas fa-shield-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI/ML Certification -->
+          <div class="cert-card" data-category="ai" data-aos="fade-up" data-aos-delay="200">
+            <div class="cert-video-container">
+              <video class="cert-video" poster="assets/cert-ai-poster.jpg" controls>
+                <source src="assets/ai-ml-cert.mp4" type="video/mp4">
+                <p>Your browser doesn't support HTML5 video. <a href="assets/ai-ml-cert.mp4">Download the video</a> instead.</p>
+              </video>
+              <div class="cert-overlay">
+                <div class="cert-badge">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-header">
+                <h3>Machine Learning Fundamentals</h3>
+                <div class="cert-issuer">
+                  <img src="assets/coursera-logo.png" alt="Coursera" class="issuer-logo">
+                  <span>Coursera - Stanford University</span>
+                </div>
+              </div>
+              <p class="cert-description">
+                Introduction to machine learning algorithms, supervised and unsupervised learning, and practical applications.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">Data Analysis</span>
+              </div>
+              <div class="cert-footer">
+                <span class="cert-date">Completed: March 2024</span>
+                <div class="cert-actions">
+                  <a href="#" class="cert-link" title="View Certificate">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="cert-link" title="Verify Certificate">
+                    <i class="fas fa-shield-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud Computing Certification -->
+          <div class="cert-card" data-category="cloud" data-aos="fade-up" data-aos-delay="300">
+            <div class="cert-video-container">
+              <video class="cert-video" poster="assets/cert-cloud-poster.jpg" controls>
+                <source src="assets/cloud-computing-cert.mp4" type="video/mp4">
+                <p>Your browser doesn't support HTML5 video. <a href="assets/cloud-computing-cert.mp4">Download the video</a> instead.</p>
+              </video>
+              <div class="cert-overlay">
+                <div class="cert-badge">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-header">
+                <h3>AWS Cloud Practitioner</h3>
+                <div class="cert-issuer">
+                  <img src="assets/aws-logo.png" alt="AWS" class="issuer-logo">
+                  <span>Amazon Web Services</span>
+                </div>
+              </div>
+              <p class="cert-description">
+                Foundational understanding of AWS cloud services, architecture, and best practices for cloud deployment.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Cloud Architecture</span>
+                <span class="skill-tag">EC2</span>
+                <span class="skill-tag">S3</span>
+              </div>
+              <div class="cert-footer">
+                <span class="cert-date">Completed: June 2024</span>
+                <div class="cert-actions">
+                  <a href="#" class="cert-link" title="View Certificate">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="cert-link" title="Verify Certificate">
+                    <i class="fas fa-shield-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming Certification -->
+          <div class="cert-card" data-category="programming" data-aos="fade-up" data-aos-delay="400">
+            <div class="cert-video-container">
+              <video class="cert-video" poster="assets/cert-programming-poster.jpg" controls>
+                <source src="assets/programming-cert.mp4" type="video/mp4">
+                <p>Your browser doesn't support HTML5 video. <a href="assets/programming-cert.mp4">Download the video</a> instead.</p>
+              </video>
+              <div class="cert-overlay">
+                <div class="cert-badge">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-header">
+                <h3>Data Structures & Algorithms</h3>
+                <div class="cert-issuer">
+                  <img src="assets/leetcode-logo.png" alt="LeetCode" class="issuer-logo">
+                  <span>LeetCode</span>
+                </div>
+              </div>
+              <p class="cert-description">
+                Advanced problem-solving skills in data structures and algorithms with focus on optimization and efficiency.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-tag">Algorithms</span>
+                <span class="skill-tag">Data Structures</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Java</span>
+              </div>
+              <div class="cert-footer">
+                <span class="cert-date">Completed: August 2024</span>
+                <div class="cert-actions">
+                  <a href="#" class="cert-link" title="View Certificate">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="cert-link" title="Verify Certificate">
+                    <i class="fas fa-shield-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Web Development Certification -->
+          <div class="cert-card" data-category="web" data-aos="fade-up" data-aos-delay="500">
+            <div class="cert-video-container">
+              <video class="cert-video" poster="assets/cert-react-poster.jpg" controls>
+                <source src="assets/react-cert.mp4" type="video/mp4">
+                <p>Your browser doesn't support HTML5 video. <a href="assets/react-cert.mp4">Download the video</a> instead.</p>
+              </video>
+              <div class="cert-overlay">
+                <div class="cert-badge">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-header">
+                <h3>Advanced React Development</h3>
+                <div class="cert-issuer">
+                  <img src="assets/udemy-logo.png" alt="Udemy" class="issuer-logo">
+                  <span>Udemy</span>
+                </div>
+              </div>
+              <p class="cert-description">
+                Advanced React concepts including hooks, context API, performance optimization, and modern development patterns.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Redux</span>
+                <span class="skill-tag">Hooks</span>
+                <span class="skill-tag">TypeScript</span>
+              </div>
+              <div class="cert-footer">
+                <span class="cert-date">Completed: October 2024</span>
+                <div class="cert-actions">
+                  <a href="#" class="cert-link" title="View Certificate">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="cert-link" title="Verify Certificate">
+                    <i class="fas fa-shield-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Programming Certification -->
+          <div class="cert-card" data-category="programming" data-aos="fade-up" data-aos-delay="600">
+            <div class="cert-video-container">
+              <video class="cert-video" poster="assets/cert-python-poster.jpg" controls>
+                <source src="assets/python-cert.mp4" type="video/mp4">
+                <p>Your browser doesn't support HTML5 video. <a href="assets/python-cert.mp4">Download the video</a> instead.</p>
+              </video>
+              <div class="cert-overlay">
+                <div class="cert-badge">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-header">
+                <h3>Python for Data Science</h3>
+                <div class="cert-issuer">
+                  <img src="assets/datacamp-logo.png" alt="DataCamp" class="issuer-logo">
+                  <span>DataCamp</span>
+                </div>
+              </div>
+              <p class="cert-description">
+                Comprehensive Python programming for data analysis, visualization, and scientific computing applications.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Matplotlib</span>
+              </div>
+              <div class="cert-footer">
+                <span class="cert-date">Completed: September 2024</span>
+                <div class="cert-actions">
+                  <a href="#" class="cert-link" title="View Certificate">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="cert-link" title="Verify Certificate">
+                    <i class="fas fa-shield-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification Stats -->
+        <div class="cert-stats" data-aos="fade-up" data-aos-delay="700">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="stat-content">
+              <h3>6+</h3>
+              <p>Certifications Earned</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-content">
+              <h3>200+</h3>
+              <p>Hours of Learning</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="stat-content">
+              <h3>95%</h3>
+              <p>Average Score</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="stat-content">
+              <h3>4</h3>
+              <p>Specializations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Projects Section -->
     <section class="projects" id="projects">
       <div class="section-logo projects-logo">
@@ -895,6 +1232,7 @@
         </div>
       </div>
     </section>
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
       <div class="section-logo contact-logo">
@@ -905,73 +1243,112 @@
       </div>
       <div class="container">
         <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Ready to collaborate? Let's discuss your next project or just say hello!
+        </p>
+
         <div class="contact-content">
-          <div class="contact-info" data-aos="fade-right">
-            <h3>Let's Connect</h3>
-            <p>
-              I'm always open to discussing new opportunities, collaborations,
-              or just having a chat about technology.
-            </p>
-            <div class="contact-details">
-              <div class="contact-item">
+          <!-- Contact Info -->
+          <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact-item">
+              <div class="contact-icon">
                 <i class="fas fa-envelope"></i>
-                <span>bijoy.biswas@email.com</span>
               </div>
-              <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+91 [phone_number]</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>[address], India</span>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>bijoy.biswas@email.com</p>
+                <a href="mailto:bijoy.biswas@email.com" class="contact-link">Send Email</a>
               </div>
             </div>
-            <div class="social-links">
-              <a href="#" class="social-link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p>+91 [phone_number]</p>
+                <a href="tel:+91[phone_number]" class="contact-link">Call Now</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>India</p>
+                <span class="contact-link">Available for Remote Work</span>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <h4>Follow Me</h4>
+              <div class="social-links">
+                <a href="#" class="social-link" data-tooltip="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" data-tooltip="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" data-tooltip="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" data-tooltip="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <form class="contact-form" data-aos="fade-left" id="contact-form">
-            <div class="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              />
-              <span class="error-message" id="name-error"></span>
+
+          <!-- Contact Form -->
+          <div class="contact-form-container" data-aos="fade-left" data-aos-delay="300">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="contact-cta" data-aos="fade-up" data-aos-delay="400">
+          <div class="cta-content">
+            <h3>Let's Build Something Amazing Together</h3>
+            <p>Whether you have a project in mind or just want to connect, I'm always excited to hear from fellow developers and potential collaborators.</p>
+            <div class="cta-buttons">
+              <a href="assets/Bijoy_Biswas_Resume.pdf" class="btn btn-secondary" download>
+                <i class="fas fa-download"></i>
+                <span>Download Resume</span>
+              </a>
+              <a href="#projects" class="btn btn-outline">
+                <span>View My Work</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
-            <div class="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-              <span class="error-message" id="email-error"></span>
-            </div>
-            <div class="form-group">
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Your Message"
-                rows="5"
-                required
-              ></textarea>
-              <span class="error-message" id="message-error"></span>
-            </div>
-            <button type="submit" class="btn btn-primary">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </section>
@@ -983,7 +1360,7 @@
           <div class="footer-main">
             <div class="footer-logo">
               <div class="footer-logo-icon">
-                <span class="footer-initial">B</span>
+                <span class="footer-initial">{B}</span>
               </div>
               <div class="footer-logo-text">
                 <h3>Bijoy Biswas</h3>
@@ -1066,6 +1443,13 @@
     <!-- Back to Top Button -->
     <button class="back-to-top" id="back-to-top">
       <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Scripts -->

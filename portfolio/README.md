@@ -68,23 +68,27 @@ portfolio/
 ## 🎯 Customization
 
 ### Colors
+
 Update CSS custom properties in `styles.css`:
+
 ```css
 :root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
-    --accent-color: #f093fb;
-    /* ... other colors */
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --accent-color: #f093fb;
+  /* ... other colors */
 }
 ```
 
 ### Content
+
 - Update personal information in `index.html`
 - Modify project details and links
 - Add or remove skills in the About section
 - Update social media links
 
 ### Styling
+
 - Modify animations in `styles.css`
 - Adjust spacing and typography
 - Customize the color scheme
@@ -92,6 +96,7 @@ Update CSS custom properties in `styles.css`:
 ## 📧 Contact Form
 
 The contact form includes:
+
 - Client-side validation
 - Success/error messaging
 - Responsive design
