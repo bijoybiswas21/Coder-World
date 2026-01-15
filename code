@@ -1,0 +1,50 @@
+#include <stdio.h>
+#define MAX 5
+
+int stack[MAX];
+int top = -1;
+
+void push(int element) {
+    if (top == MAX - 1) {
+        printf("Stack overflow!\n");
+    } else {
+        top++;
+        stack[top] = element;
+        printf("%d is inserted into the stack\n", element);
+    }
+}
+
+void pop() {
+    if (top == -1) {
+        printf("Stack underflow!\n");
+    } else {
+        printf("%d is deleted from the stack\n", stack[top]);
+        top--;
+    }
+}
+
+void display() {
+    if (top == -1) {
+        printf("Stack underflow!\n");
+    } else {
+        printf("Elements in the stack are: ");
+        for (int i = top; i >= 0; i--) {
+            printf("%d ", stack[i]);
+        }
+        printf("\n");
+    }
+}
+
+// Optional: Main function to test the stack
+int main() {
+    push(10);
+    push(20);
+    push(30);
+    display();
+    pop();
+    display();
+    pop();
+    pop();
+    pop(); // This will show underflow
+    return 0;
+}
