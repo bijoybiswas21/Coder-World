@@ -1,0 +1,4 @@
+DISM /ONLINE /CLEANUP-IMAGE /RESTOREHEALTH
+
+
+Get-AppXPackage | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
