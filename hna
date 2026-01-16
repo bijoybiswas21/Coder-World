@@ -1,0 +1,21 @@
+import pyttsx3
+
+# Initialize the text-to-speech engine
+engine = pyttsx3.init()
+
+# Set voice (0 = male, 1 = female on most systems)
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[0].id)  # change index if needed
+
+# Set speech rate (words per minute)
+engine.setProperty('rate', 200)
+
+# Set volume (0.0 to 1.0)
+engine.setProperty('volume', 0.8)
+
+# Take input from user
+text = input("Enter text to speak: ")
+
+# Speak the user input
+engine.say(text)
+engine.runAndWait()
