@@ -1,0 +1,15 @@
+import pyttsx3
+
+engine = pyttsx3.init()
+
+# On many systems: 0 = male, 1 = female (might differ, check once if needed)
+engine.setProperty('voice', engine.getProperty('voices')[0].id)  # female voice
+
+# Set speed (words per minute)
+engine.setProperty('rate', 200)  # slower
+
+# Set volume (0.0 to 1.0)
+engine.setProperty('volume', 0.8)
+
+engine.say("AI is a study of how human brain think, learn, decide and work, ")
+engine.runAndWait()
