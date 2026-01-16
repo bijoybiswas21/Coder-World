@@ -1,0 +1,11 @@
+import gTTS
+
+text = """
+Hello, how are you?
+This is a multi-line text to speech example.
+Using Google Text to Speech.
+"""
+
+tts = gTTS(text=text, lang='en')
+tts.save("speech.mp3")
+playsound("speech.mp3")
