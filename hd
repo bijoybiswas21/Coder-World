@@ -183,3 +183,101 @@ SLIDE 15: IMPACT, SCALABILITY & ALIGNMENT
 Bas ek line me bolo:
 **“Impact numbers add karo”** or **“Speaker notes chahiye”**
 
+Samajh gaya 👍
+Aapko **EK FINAL MASTER PROMPT** chahiye jo:
+
+* ✔ **Isi 15-page source content par kaam kare**
+* ✔ **Slides = 15 hi rahein**
+* ✔ **Lekin “9-Pages / 9-Section Evaluation Protocol” ko strictly follow kare**
+* ✔ NotebookLM / AI Slides / PPT Generator sab ke saath kaam kare
+* ✔ Govt / UIDAI-style hackathon ke liye safe ho
+
+Neeche **copy-paste READY FINAL PROMPT** de raha hoon.
+Iske baad aapko kuch explain karne ki zarurat nahi padegi.
+
+---
+
+You are given a source document containing **15 complete slides/pages of content** for a government-style hackathon project.
+
+Your task is to generate slides while **STRICTLY FOLLOWING a 9-PAGE EVALUATION PROTOCOL**, without reducing the total number of slides.
+
+### IMPORTANT RULES (MUST FOLLOW):
+
+1. **Do NOT remove any slide**. All 15 slides must remain.
+2. **Do NOT invent new data, claims, or technologies**.
+3. **Do NOT introduce real Aadhaar data or PII**.
+4. Use **formal, governance-safe language** suitable for UIDAI / Government judges.
+5. Content must remain **explainable, auditable, and policy-aligned**.
+6. Maintain **one clear idea per slide**.
+7. Use bullets or short paragraphs suitable for presentation slides.
+
+---
+
+### APPLY THIS 9-PAGE / 9-SECTION PROTOCOL ACROSS THE 15 SLIDES
+
+Map the 15 slides into the following **9 evaluation sections**:
+
+**Section 1: Cover & Context**
+→ Slide 1 (Cover Page)
+→ Slide 2 (Context & Background)
+
+**Section 2: Problem Definition**
+→ Slide 3 (Problem Statement)
+→ Slide 4 (Problem Scope & Constraints)
+
+**Section 3: Data & Governance**
+→ Slide 5 (Dataset Overview)
+→ Slide 6 (Data Governance & Privacy)
+
+**Section 4: Methodology**
+→ Slide 7 (Methodology Overview)
+→ Slide 8 (Data Cleaning & Processing)
+
+**Section 5: Feature & Logic Design**
+→ Slide 9 (Feature Preparation)
+→ Slide 10 (Logic Behind the Code)
+
+**Section 6: Analysis Framework**
+→ Slide 11 (Data Analysis Approach)
+
+**Section 7: Insights & Interpretation**
+→ Slide 12 (Analytical Insights)
+
+**Section 8: Communication & Implementation**
+→ Slide 13 (Visual Communication)
+→ Slide 14 (Source Code & Implementation)
+
+**Section 9: Impact & Alignment**
+→ Slide 15 (Impact, Scalability & Alignment)
+
+---
+
+### OUTPUT REQUIREMENTS:
+
+* Generate **15 slides exactly**, clearly labeled Slide 1 to Slide 15.
+* Ensure each slide clearly supports **one of the 9 evaluation sections** above.
+* Language should demonstrate **problem understanding, analytical rigor, governance awareness, and scalability**.
+* The code slide must remain **readable, high-level, and explainable**.
+* The final slide must clearly communicate **impact, scalability, and alignment with UIDAI’s vision**.
+
+Proceed using ONLY the provided source content.
+
+---
+
+## ✅ Ye prompt kya guarantee karta hai
+
+* ✔ 15 slides **unchanged**
+* ✔ 9-page / 9-section **judge protocol fully satisfied**
+* ✔ No accidental policy violation
+* ✔ NotebookLM + AI slide tools ke liye perfect
+* ✔ UIDAI / Govt evaluator psychology aligned
+
+Agar chaho to next main:
+
+* 🏆 **Same prompt ka “winner-grade aggressive” version**
+* 🎤 **Is prompt ke output ke liye speaker notes**
+* 📊 **Impact slide ko numbers-driven bana dunga**
+
+Bas bolo 👌
+
+
