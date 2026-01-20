@@ -1,16 +1,3 @@
-Samajh gaya 👍
-Aapko **EK FINAL MASTER PROMPT** chahiye jo:
-
-* ✔ **Isi 15-page source content par kaam kare**
-* ✔ **Slides = 15 hi rahein**
-* ✔ **Lekin “9-Pages / 9-Section Evaluation Protocol” ko strictly follow kare**
-* ✔ NotebookLM / AI Slides / PPT Generator sab ke saath kaam kare
-* ✔ Govt / UIDAI-style hackathon ke liye safe ho
-
-Neeche **copy-paste READY FINAL PROMPT** de raha hoon.
-Iske baad aapko kuch explain karne ki zarurat nahi padegi.
-
----
 
 You are given a source document containing **15 complete slides/pages of content** for a government-style hackathon project.
 
@@ -77,20 +64,3 @@ Map the 15 slides into the following **9 evaluation sections**:
 
 Proceed using ONLY the provided source content.
 
----
-
-## ✅ Ye prompt kya guarantee karta hai
-
-* ✔ 15 slides **unchanged**
-* ✔ 9-page / 9-section **judge protocol fully satisfied**
-* ✔ No accidental policy violation
-* ✔ NotebookLM + AI slide tools ke liye perfect
-* ✔ UIDAI / Govt evaluator psychology aligned
-
-Agar chaho to next main:
-
-* 🏆 **Same prompt ka “winner-grade aggressive” version**
-* 🎤 **Is prompt ke output ke liye speaker notes**
-* 📊 **Impact slide ko numbers-driven bana dunga**
-
-Bas bolo 👌
